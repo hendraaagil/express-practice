@@ -60,6 +60,10 @@ app.post('/blogs', (req, res) => {
     });
 });
 
+app.get('/blogs/create', (req, res) => {
+  res.render('create', { title: 'Create a New Blog' });
+});
+
 app.get('/blogs/:id', (req, res) => {
   const id = req.params.id;
   Blog.findById(id)
@@ -81,10 +85,6 @@ app.delete('/blogs/:id', (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-});
-
-app.get('/blogs/create', (req, res) => {
-  res.render('create', { title: 'Create a New Blog' });
 });
 
 // 404 page
