@@ -74,7 +74,20 @@ h3 {
   margin-left: 20px;
 }
 
-/* index, details, create styles */
+/* index styles */
+.blogs a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 6px solid #145adc;
+}
+
+.blogs a:hover h3 {
+  transition: 0.3s;
+  color: #145adc;
+}
+
+/* create styles */
 .create-blog form {
   max-width: 400px;
   margin: 0 auto;
