@@ -87,6 +87,27 @@ h3 {
   color: #145adc;
 }
 
+/* details styles */
+.details {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.delete:hover {
+  transition: 0.5s;
+  background-color: #d43a3a;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
 /* create styles */
 .create-blog form {
   max-width: 400px;
