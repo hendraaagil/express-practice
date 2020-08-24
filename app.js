@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes');
+require('dotenv').config();
 
 // express app
 const app = express();
@@ -42,7 +43,5 @@ app.use((req, res) => {
   res.status(404).render('404', { title: '404 Not Found!' });
 });
 
-require('dotenv').config();
 const port = process.env.PORT || 3000;
-
 app.listen(port);
