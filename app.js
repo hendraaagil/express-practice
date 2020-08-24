@@ -41,3 +41,8 @@ app.use('/blogs', blogRoutes);
 app.use((req, res) => {
   res.status(404).render('404', { title: '404 Not Found!' });
 });
+
+require('dotenv').config();
+const port = process.env.PORT || 3000;
+
+app.listen(port);
